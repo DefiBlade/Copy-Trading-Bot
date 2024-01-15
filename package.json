@@ -1,0 +1,54 @@
+{
+  "name": "Wallet-Tracked-Buy-Bot",
+  "version": "0.1.0",
+  "description": "Wallet tracked buy bot",
+  "author": "dmmeddin077@gmail.com",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "body-parser": "^1.19.0",
+    "bootstrap": "4.3.1",
+    "chai": "4.2.0",
+    "chalk": "^4.1.2",
+    "concurrently": "5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^5.0.0",
+    "ethers": "^5.4.6",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "mdbreact": "^5.1.0",
+    "react": "16.8.4",
+    "react-bootstrap": "1.0.0-beta.5",
+    "react-cookies": "^0.1.1",
+    "react-dom": "16.8.4",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "2.1.3",
+    "react-toastify": "^5.5.0",
+    "sequelize": "^5.16.0",
+    "sqlite3": "^5.1.6",
+    "web3": "^1.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "sequelize-cli": "^5.5.0"
+  },
+  "scripts": {
+    "start-devserver": "node server/app.js",
+    "start-server": "nodemon server/app.js --watch server/*",
+    "start-front": "react-scripts --openssl-legacy-provider start",
+    "start": "node server/app.js",
+    "dev": "concurrently \"npm run start-server\" \"npm run start-front\" --kill-others --kill-others-on-fail",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
